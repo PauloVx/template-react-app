@@ -1,0 +1,68 @@
+//Roboto and ubuntu fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap');
+
+:root
+{
+	--primary-color: #599ec0;
+	--background-color: #f0f0f5;
+	--title-color: #040542;
+	--text-color: #6C6C80;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: var(--background-color);
+	color: var(--text-color);
+}
+
+body, input, button, select
+{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: var(--title-color);
+	font-family: 'Ubuntu';
+}
+
+input, select
+{
+	outline: none;
+}
+
+.btn-default
+{
+	height: 48px;
+	width: 250px;
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	transition: filter 0.3s;
+
+	color: var(--background-color);
+	background-color: var(--primary-color);
+
+	font-size: 16px;
+	font-weight: bold;
+
+	margin-left: 28px;
+
+	&:hover
+	{
+		filter: opacity(80%);
+	}
+
+	&:active
+	{
+		filter: opacity(60%);
+	}
+}
